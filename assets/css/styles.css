@@ -119,17 +119,72 @@ img {
 }
 
 .section__title-gradient {
-  background: var(--text-gradient)
+  background: var(--text-gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /*=============== LAYOUT ===============*/
+.main {
+  overflow: hidden; /*for animation and images*/
+}
 
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
 
+.grid {
+  display: grid;
+}
 /*=============== HEADER ===============*/
-
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background: transparent;
+}
 
 /*=============== NAV ===============*/
+.nav {
+  height: vra(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}
+.nav__logo {
+  display: flex;
+  width: 1.5rem;
+}
+
+.nav__toggle {
+  font-size: 1.2rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    left: 0;
+    padding: 4rem 0 3rem;
+    transition: .4s;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
 
 /* show menu */
 
