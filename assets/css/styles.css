@@ -148,15 +148,14 @@ img {
   z-index: var(--z-fixed);
   background: transparent;
 }
-
 /*=============== NAV ===============*/
 .nav {
-  height: vra(--header-height);
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
+
 .nav__logo {
   display: flex;
   width: 1.5rem;
@@ -174,6 +173,7 @@ img {
     background-color: var(--body-color);
     top: 0;
     left: 0;
+    width: 100%;
     padding: 4rem 0 3rem;
     transition: .4s;
   }
@@ -186,6 +186,32 @@ img {
   row-gap: 1rem;
 }
 
+.nav__link {
+  color: var(--white-color);
+  font-size: var(--h2-font-size);
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  background: var(--text-gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.nav__link:hover {
+  background: var(--white-color);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.nav__close {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1rem;
+  right: 1rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
 /* show menu */
 
 
