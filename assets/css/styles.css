@@ -109,7 +109,7 @@ img {
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 4rem 0 2 rem;
+  padding: 4rem 0 2rem;
 }
 
 .section__title {
@@ -218,7 +218,9 @@ img {
 }
 
 /* Change background header */
-
+.scroll-header {
+  background-color: var(--body-color)
+}
 
 /* Active link */
 
@@ -274,6 +276,29 @@ img {
 }
 
 /*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 1rem 1.25rem; 
+  border-radius: 0.5rem;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: var(--black-color-alt);
+}
+
+.button__icon {
+  font-size: 1.2rem;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
 
 
 /*=============== SPONSOR ===============*/

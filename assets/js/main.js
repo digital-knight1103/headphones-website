@@ -29,8 +29,28 @@ const linkAction = () => {
 navLink.forEach(el => el.addEventListener('click', linkAction))
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+// const changeBackground = () => {
+//   const header = document.querySelector('.header')
 
+//   if(window.scrollY >= 100) {
+//     header.classList.add('scroll-header')
+//   } else { 
+//     header.classList.remove('scroll-header')
+//   };
 
+// window.addEventListener('scroll', changeBackground);
+
+function scrollHeader() {
+  const header = document.querySelector('.header')
+
+  if(window.scrollY >= 50) {
+    header.classList.add('scroll-header')
+  } else { 
+    header.classList.remove('scroll-header')
+  }
+} 
+
+window.addEventListener('scroll', scrollHeader);
 /*==================== SHOW SCROLL UP ====================*/ 
 
 
