@@ -349,13 +349,32 @@ img {
   width: 250px;
   position: absolute;
   top: 2rem;
-  left: 6rem;
+  left: 7rem;
 }
 
 
 
 /*=============== CASE ===============*/
+.case__container {
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.case__date {
+  padding: 5rem 0 3rem;
+}
+
+.case__img {
+  width: 250px;
+  position: absolute;
+  top: -4rem;
+  left: -3rem;
+}
+
+.case__description {
+  margin-bottom: var(--mb-1-5);
+  line-height: var(--text-line-height);
+}
 
 /*=============== DISCOUNT ===============*/
 
